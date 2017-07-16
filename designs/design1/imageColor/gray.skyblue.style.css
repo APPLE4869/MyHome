@@ -1,0 +1,726 @@
+@charset 'utf-8';
+
+/*-------  ここから共通のCSS  --------*/
+
+.image-color {
+	color: rgb(52,56,56);
+}
+
+.image-background-color {
+	background: rgb(52,56,56);
+}
+
+.section-title {
+	border-bottom: 3px solid rgb(0,180,204);
+	background: linear-gradient(0deg, #E6E6E6, #fff);
+	color: rgb(0,180,204);
+}
+
+.image-building-border {
+	border-top: 3px solid rgb(0,95,107);
+    border-bottom: 3px solid rgb(0,95,107);
+}	
+
+.sub-section-title {
+	background: linear-gradient(0deg, rgb(52,56,56), rgb(0,180,204));
+	color: #fff;
+}
+
+.field-title {
+	background: linear-gradient(0deg, rgb(52,56,56), rgb(0,180,204));
+	color: #fff;
+}
+
+@media (max-width: 1120px) {
+
+	.section-title {
+		border-bottom: 5px solid rgb(0,180,204);
+	}
+
+}
+
+@media (max-width: 760px) {
+
+	.section-title {
+		border-bottom: 3px solid rgb(0,180,204);
+	}
+
+}
+
+/*-------  ここまで共通のCSS  --------*/
+
+/*-------  ここからHeader  --------*/
+
+.header-title h2 {
+								color: #424242;
+}
+
+/*-------  ここまでHeader  --------*/
+
+/*-------  ここからGlobalNav  --------*/
+
+#globalMenu {
+	background: #fff;
+}
+
+#globalMenu a {
+	color: rgb(52,56,56);
+}
+
+#globalMenu a:active {
+	color: #fff;
+	background: rgb(52,56,56);
+}
+
+#globalMenu a:hover {
+	color: #fff;
+	background: rgb(52,56,56);
+}
+
+#nowNav a{
+	background: rgb(52,56,56);
+	color: #fff;
+}
+
+@media (max-width: 760px) {
+
+	#globalMenu {
+		border-bottom: 1px solid #D8D8D8;
+	}
+
+	#header-contact-url {
+		color: rgb(0,180,204);
+	}
+
+	.nav-icon {
+		color: #2E2E2E;
+	}
+
+	#slide-nav {
+		background: #fff;
+		border-right: 1px solid #D8D8D8;
+	}
+
+}
+
+/*-------  ここまでGlobalNav  --------*/
+
+/*-------  ここからTop  --------*/
+
+.top-info-title table {
+	color: #2E2E2E;
+	background: #fff;
+}
+
+@media (max-width: 760px) {
+
+	.top-info-image h2 {
+		color: #2E2E2E;
+		background: rgba(255, 255, 255, 0.6);
+	}
+}
+
+/*-------  ここまでTop  --------*/
+
+/*-------  ここからContent  --------*/
+
+.content {
+	background: #E6E6E6;
+}
+
+.content-main {
+	background: #fff;
+}
+
+.content-main-border {
+	border: 1px solid #D8D8D8;
+	background: #fff;
+}
+
+@media (max-width: 760px) {
+
+	.content-sub {
+		background: #fff;
+	}
+
+}
+
+	/*---  ここから空室情報  ----*/
+
+.room-column {
+	border-bottom: 1px solid #BDBDBD;
+}
+
+.info-feature-top {
+	border-bottom: 5px solid rgb(0,95,107);
+}
+
+.room-number h4 {
+	color: rgb(0,180,204);
+}
+
+.room-feature li {
+	color: #FF8000;
+	background: linear-gradient(0deg, #F2F2F2, #fff);
+	border: 1px solid #F7BE81;
+}
+
+.info-feature-bottom table {
+	color: #2E2E2E;
+}
+
+.info-feature-bottom table tr {
+	border-bottom: 1px dotted #D8D8D8;
+}
+
+@media (max-width: 1120px) {
+
+	.info-feature-top {
+		border-bottom: 4px solid rgb(0,95,107);
+	}
+
+}
+
+@media (max-width: 760px) {
+
+	.info-feature-top {
+		border-bottom: 3px solid rgb(0,95,107);
+	}
+
+}
+
+	/*---  ここまで空室情報  ----*/
+
+	/*---  ここからでプロフィール  ----*/
+
+.content-myinfo-column {
+	border: 1px solid #BDBDBD;
+	background: #fff;
+}
+
+.content-myInfo-text p {
+  	color: #2E2E2E;
+}
+
+.info-btn a:hover {
+  	text-shadow: 0 0 7px #fff;
+}
+
+.info-btn a:active {
+  	text-shadow: 0 0 10px #fff;
+}
+
+.blue {
+ 	background: linear-gradient(0deg, rgb(52,56,56), rgb(0,180,204));
+ 	box-shadow: 0 2px 0 rgb(0,180,204);
+ }
+
+ .blue:active {
+ 	box-shadow: 0 0 0 rgb(0,180,204);
+ }
+
+@media (max-width: 1120px) {
+
+	.info-btn a:active {
+  		text-shadow: 0 0 7px #fff;
+  	}
+
+ 	.blue {
+ 		box-shadow: 0 3px 0 rgb(0,180,204);
+ 	}
+
+}
+
+	/*---  ここまででプロフィール  ----*/
+
+	/*---  ここから他物件  ----*/
+
+.content-elseHouse {
+	border: 1px solid #D8D8D8;
+}
+
+.content-elseHouse-column {
+  	background: #fff;
+  	border-bottom: 1px solid #D8D8D8;
+}
+
+.elseHouse-detail a {
+  	color: #5882FA;
+}
+
+.elseHouse-detail li {
+  	color: #2E2E2E;
+}
+
+	/*---  ここまで他物件  ----*/
+
+	/*---  ここからお問い合わせ案内  ----*/
+
+.content-contact {
+  	background: rgb(52,56,56);
+}
+
+.content-contact-text {
+  	background: #fff;
+}
+
+.content-contact-text p {
+  	color: #2E2E2E;
+}
+
+.orange {
+  	background: linear-gradient(0deg, rgb(0,180,204), rgb(0,140,158));
+  	box-shadow: 0 2px 0 rgb(0,95,107);
+}
+
+.orange:active {
+ 	box-shadow: 0 0 0 rgb(0,95,107);
+}
+
+  @media (max-width: 1120px) {
+
+	.orange {
+  		box-shadow: 0 3px 0 rgb(0,95,107);
+  	}
+
+  }
+
+	/*---  ここまでお問い合わせ案内  ----*/
+
+/*-------  ここまでContent  --------*/
+
+/*-------  ここからBuilding  --------*/
+
+.building-inner {
+	background: #E6E6E6;
+}
+
+.building-info-inner {
+	background: #fff;
+	border: 1px solid #D8D8D8;
+}
+
+	/*---  ここからBuilding-Top  ----*/
+
+    /*--  ここからBuilding-Top-Detail  ---*/
+
+.building-info-detail tr {
+    color: #2E2E2E;
+}
+
+.building-info-detail tbody tr {
+    border-bottom: 1px dotted #D8D8D8;
+}
+
+    /*--  ここからBuilding-Top-Detail  ---*/
+
+    /*--  ここからBuilding-Top-Appearance  ---*/
+
+  /*---  ここまでBuilding-Top  ----*/
+
+  /*---  ここからBuilding-Middle  ----*/
+
+  .building-inner-middle {
+  	background: #fff;
+  }
+
+  .building-facility-column {
+  	transition: .5s;
+  }
+
+  .building-facility-column:hover {
+  	background: rgba(0, 0, 0, .05);
+  	transition: .5s;
+  }
+
+ .facility-text p {
+ 	color: #424242;
+ }
+
+
+/*---  ここまでBuilding-Middle  ----*/
+
+/*-------  ここまでBuilding  --------*/
+
+/*-------  ここからLocation  --------*/
+
+#location {
+	background: #E6E6E6;
+}
+
+.location-inner {
+	border: 1px solid #D8D8D8;
+	background: #fff;
+}
+
+.location-top-text p {
+	color: #1C1C1C;
+}
+
+.location-bottom-column h3 {
+	color: #5882FA;
+}
+
+.location-bottom-column p {
+	color: #2E2E2E;
+}
+
+/*-------  ここまでLocation  --------*/
+
+/*-------  ここからRoomlist  --------*/
+
+#roomlist {
+	background: #E6E6E6;
+}
+
+.roomlist-inner {
+	background: #fff;
+}
+
+.roomlist-section-title h3 {
+	color: #fff;
+	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.roomlist-explain h5 {
+	color: #2E2E2E;
+}
+
+.roomlist-numbers {
+	border: 2px solid #424242;
+}
+
+.single-number p {
+	border: 1px solid #424242;
+	box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+	color: #2E2E2E;
+}
+
+.single-number p::before {
+	color: #424242;
+}
+
+.local-room p {
+	background: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.roomlist-column {
+	border: 1px solid #D8D8D8;
+}
+
+.roomlist-number h4 {
+	border: 1px solid #424242;
+	box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+	color: #2E2E2E;
+}
+
+.roomlist-detail-click h5 {
+	color: #fff;
+	border: 2px outset rgb(52,56,56);
+
+	transition: .3s;
+}
+
+.roomlist-detail-click h5:hover {
+	text-shadow: 0 0 5px #fff;
+
+	transition: .3s;
+}
+
+.roomlist-detail-click h5:active {
+	border: 2px inset rgb(52,56,56);
+}
+
+.no-public {
+	border: 1px solid #D8D8D8;
+}
+
+.no-public h2 {
+	color: #2E2E2E;
+}
+
+/*-------  ここまでRoomlist  --------*/
+
+/*-------  ここまでRoom  --------*/
+
+#room {
+	background: #E6E6E6;
+}
+
+.room-inner {
+	background: #fff;
+}
+
+.room-title h2 {
+	color: #000000;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.room-detail table {
+	color: #1C1C1C;
+}
+
+.room-detail table tr {
+	border-bottom: 2px dotted #D8D8D8;
+}
+
+.room-detail-primaryImage img {
+	border: 5px inset rgb(52,56,56);
+}
+
+.room-primaryImage-column h3 {
+	color: #fff;
+}
+
+.room-preview-column {
+	transition: .3s;
+}
+
+.room-preview-column:hover {
+	background: rgba(0, 0, 0, 0.1);
+
+	transition: .3s;
+}
+
+.room-preview-column h4 {
+	color: #1C1C1C;
+}
+
+.room-previews {
+	border: 1px solid #D8D8D8;
+}
+
+.room-detail-btns a {
+	color: #fff;
+	background: rgb(52,56,56);
+	border: 3px outset rgb(52,56,56);
+}
+
+.room-detail-btns a:hover {
+	text-shadow: 0 0 15px #fff;
+}
+
+.room-detail-btns a:active {
+	border: 3px inset rgb(52,56,56);
+}
+
+@media (max-width: 1120px) {
+
+	.room-detail-primaryImage img {
+		border: 4px inset rgb(52,56,56);
+	}
+
+}
+
+@media (max-width: 760px) {
+
+	.room-detail-primaryImage img {
+		border: 2px inset rgb(52,56,56);
+	}
+
+}
+
+/*-------  ここまでRoom  --------*/
+
+/*-------  ここからCampaign  --------*/
+
+#campaign {
+	background: #E6E6E6;
+}
+
+.campaign-inner {
+	border: 1px solid #D8D8D8;
+	background: #fff;
+}
+
+.campaign-info-text p {
+	color: #151515;
+}
+
+/*-------  ここまでCampaign  --------*/
+
+/*-------  ここからOther  --------*/
+
+#other {
+	background: #E6E6E6;
+}
+
+.other-inner {
+	border: 1px solid #D8D8D8;
+	background: #fff;
+}
+
+.other-column {
+	border: 1px solid #D8D8D8;
+}
+
+.other-image img {
+	border: 5px inset #2E2E2E;
+}
+
+.other-detail tr {
+	border-bottom: 1px dotted #D8D8D8;
+	color: #1C1C1C;
+}
+
+@media (max-width: 1120px) {
+
+	.other-image img {
+		border: 3px inset #2E2E2E;
+	}
+
+}
+
+/*-------  ここまでOther  --------*/
+
+/*-------  ここまでOther  --------*/
+
+/*-------  ここからContact  --------*/
+
+.contact {
+	background: #E6E6E6;
+}
+
+.contact-inner {
+	border: 1px solid #D8D8D8;
+	background: #fff;
+}
+
+.contact-phone {
+	border: 1px solid #D8D8D8;
+	color: #151515;
+}
+
+.contact-form-border {
+	border: 1px solid #cccccc;
+}
+
+.contact-form-text p {
+	color: #151515;
+}
+
+.contact form {
+	border: 1px solid #cccccc;
+	color: #151515;
+}
+
+.contact form tr {
+	border-bottom: 1px solid #cccccc;
+}
+
+.contact form th {
+	background: #f0f0f0;
+	border-right: 1px solid #cccccc;
+}
+
+.submit_btn {
+	color: #fff;
+	background: linear-gradient(0deg, rgb(0,95,107
+), rgb(52,56,56));
+	border: 1px outset rgb(52,56,56);
+}
+
+.submit_btn:hover {
+	text-shadow: 0 0 3px #fff;
+	background: linear-gradient(0deg, rgb(0,140,158
+), rgb(0,180,204));
+}
+
+.submit_btn:active {
+	text-shadow: 0 0 7px #fff;
+}
+
+.red {
+	color: #FF0000;
+}
+
+.link {
+	color: rgb(0,180,204);
+}
+
+@media (max-width: 1120px) {
+
+	.submit_btn:active {
+		background: linear-gradient(0deg, #01DFD7, rgb(0,180,204));
+		text-shadow: 0 0 5px #fff;
+	}
+	
+}
+
+/*-------  ここまでContact  --------*/
+
+/*-------  ここからphone-Contact  --------*/
+
+@media (max-width: 760px) {
+
+	.post-title h2 {
+		background: #f0f0f0;
+		border-top: 1px solid #cccccc;
+		border-bottom: 1px solid #cccccc;
+	}
+
+}
+
+/*-------  ここまでphone-Contact  --------*/
+
+/*-------  ここからFooter  --------*/
+
+.social-icon a {
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.social-icon a:hover {
+	border: 2px solid #D8D8D8;
+	color: #D8D8D8;
+	text-shadow: 0 0 3px #fff;
+}
+
+#footer a:hover {
+	text-shadow: 0 0 5px #fff;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#footer p {
+	color: #fff;
+}
+
+@media (max-width: 1120px) {
+
+	.social-icon a:active {
+		border: 2px solid #D8D8D8;
+		color: #D8D8D8;
+		text-shadow: 0 0 3px #fff;
+	}
+
+	#footer a:active {
+		text-shadow: 0 0 5px #fff;
+		background: rgba(0, 0, 0, 0.2);
+	}
+
+	#slide-top {
+		background: rgb(52,56,56);
+		color: #fff;
+		box-shadow: 0 2px 0 rgb(0,180,204), 0 0 3px rgba(0, 0, 0, 0.4);
+	}
+
+}
+
+@media (max-width: 760px) {
+
+	.social-icon a {
+		border: 1px solid #fff;
+	}
+
+	.social-icon a:hover {
+		border: 1px solid #D8D8D8;
+	}
+
+	#slide-top {
+		box-shadow: 0 1.5px 0 rgb(0,180,204), 0 0 2px rgba(0, 0, 0, 0.4);
+	}
+
+}
+
+/*-------  ここまでFooter  --------*/
