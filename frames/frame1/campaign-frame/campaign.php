@@ -1,6 +1,6 @@
 
-	<?php include(dirname(__FILE__) . '/../../../../frames/frame1/privacy.php'); ?>
-	
+	<?php //include(dirname(__FILE__) . '/../../../../frames/frame1/privacy.php'); ?>
+
 	<!-- ここからCampaign -->
 
 	<div id="campaign" class="campaign">

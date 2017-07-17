@@ -98,6 +98,7 @@
 										list($floor1, $floor2) = explode('&&', $row['floor']); 
 										$roomDetails = $row['room_detail'];
 										$roomDetail_block = explode('&&', $roomDetails);
+										$floorDetailDisplay = '';
 										for($i = 0; $i < count($roomDetail_block); $i++) {
 											list($roomDetail1, $roomDetail2) = explode('&', $roomDetail_block[$i]);
 											if($i > 0) {

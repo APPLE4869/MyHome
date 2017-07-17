@@ -46,8 +46,9 @@ foreach($dbh->query($mysql) as $row) {
 		array_push($locations_container, $row['location' . $i]);
 
 		$j = $i - 1;
-		
-		list($location_block[$j]['image'], $location_block[$j]['title'], $location_block[$j]['time'], $location_block[$j]['address'], $location_block[$j]['explain'], $location_block[$j]['lat'], $location_block[$j]['lng'], $location_block[$j]['icon']) = explode('{&}', $locations_container[$j]);
+		if (isset($locations_container[$j])) {
+			list($location_block[$j]['image'], $location_block[$j]['title'], $location_block[$j]['time'], $location_block[$j]['address'], $location_block[$j]['explain'], $location_block[$j]['lat'], $location_block[$j]['lng'], $location_block[$j]['icon']) = explode('{&}', $locations_container[$j]);
+		}
 
 	}
 }
@@ -68,7 +69,7 @@ $traffic1 = explode('&', $traffic); //交通[表示]
 
   //周辺施設に関する情報15種のうち、画像のないものを削除
 for($i = 0; $i < count($location_block); $i++) {
-	if($location_block[$i]['image'] == '') {
+	if(empty($location_block[$i]['image'])) {
 		unset($location_block[$i]);
 	}
 }

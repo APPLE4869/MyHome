@@ -3,6 +3,7 @@
 
 $dirs = [];
 $dirs = explode('/', $dir);
+$dirs = explode('\\', $dir);
 
 $dirs = array_reverse($dirs);
 

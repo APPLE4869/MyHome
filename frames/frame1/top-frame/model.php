@@ -16,7 +16,6 @@ require_once(dirname(__FILE__) . '/data.php');
 	<?php include(dirname(__FILE__) . '/../../../config/head_inner.php'); ?>
 
 	<?php include(dirname(__FILE__) . '/../style.php'); ?>
-	<?php include(dirname(__FILE__) . '/../slide.style.php'); ?>
 
 	<link rel="stylesheet" type="text/css" href="./../../../../designs/<?= $design; ?>/slick.css">
 	<link rel="stylesheet" type="text/css" href="./../../../../designs/<?= $design; ?>/slick-theme.css">

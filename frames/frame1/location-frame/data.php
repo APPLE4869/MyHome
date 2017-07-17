@@ -30,9 +30,10 @@ foreach($dbh->query($mysql) as $row) {
 
 		$j = $i - 1;
 
-		list($location_block[$j]['image'], $location_block[$j]['title'], $location_block[$j]['time'], $location_block[$j]['address'], $location_block[$j]['explain'], $location_block[$j]['lat'], $location_block[$j]['lng'], $location_block[$j]['icon']) = explode('{&}', $locations_container[$j]); //周辺施設情報[表示]
-		
-		if($location_block[$j]['image'] == '') {
+		if (isset($locations_container[$j])) {
+			list($location_block[$j]['image'], $location_block[$j]['title'], $location_block[$j]['time'], $location_block[$j]['address'], $location_block[$j]['explain'], $location_block[$j]['lat'], $location_block[$j]['lng'], $location_block[$j]['icon']) = explode('{&}', $locations_container[$j]); //周辺施設情報[表示]
+		}
+		if(empty($location_block[$j]['image'])) {
 			unset($location_block[$j]);
 		}
 

@@ -49,12 +49,10 @@
 								<tr>
 									<th>交通</th>
 									<td>
-										<?= h($traffic1[1]); ?>
-										<?= (h($traffic2[1]) !== '') ? '</br>': ''; ?>
-										<?= h($traffic2[1]); ?>
-										<?= (h($traffic3[1]) !== '') ? '</br>': ''; ?>
-										<?= h($traffic3[1]); ?>
-									</td>							
+										<?= (!empty($traffic1[1]))?h($traffic1[1]):''; ?>
+										<?= (!empty($traffic2[1]))?'</br>'.h($traffic1[1]):''; ?>
+										<?= (!empty($traffic3[1]))?'</br>'.h($traffic2[1]):''; ?>
+									</td>
 								</tr>
 								<tr>
 									<th>建物設備</th>

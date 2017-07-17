@@ -55,7 +55,9 @@
 								<th>漢字<span class="red">※</span></th>
 								<td>
 									<div class="validator">
-										<p><?= $error['nameEmpty']; ?></p>
+										<?php if (isset($error['nameEmpty'])) : ?>
+											<p><?= $error['nameEmpty']; ?></p>
+										<?php endif; ?>
 									</div>
 									姓
 									<input type="text" name="last_name" id="last-name" class="input-area" maxlength="100">
@@ -68,7 +70,9 @@
 								<th>フリガナ<span class="red">※</span></th>
 								<td>
 									<div class="validator">
-										<p><?= $error['name2Empty']; ?></p>
+										<?php if (isset($error['name2Empty'])) : ?>
+											<p><?= $error['name2Empty']; ?></p>
+										<?php endif; ?>
 									</div>
 									セイ
 									<input type="text" name="last_name2" id="last_name_kana" class="input-area" maxlength="100">
@@ -81,7 +85,9 @@
 								<th colspan="2">電話番号<span class="red">※</span></th>
 								<td>
 									<div class="validator">
-										<p><?= $error['phoneEmpty']; ?></p>
+										<?php if (isset($error['phoneEmpty'])) : ?>
+											<p><?= $error['phoneEmpty']; ?></p>
+										<?php endif; ?>
 									</div>
 									<input type="text" name="phone_number" id="phone_number" maxlength="50" size="50">
 									[半角数字]
@@ -91,9 +97,15 @@
 								<th colspan="2" rowspan="2">メールアドレス<span class="red">※</span></th>
 								<td class="mail-space">
 									<div class="validator">
-										<p><?= $error['email1Empty']; ?></p>
-										<p><?= $error['emailMatch']; ?></p>
-										<p><?= $error['emailFormat']; ?></p>
+										<?php if (isset($error['email1Empty'])) : ?>
+											<p><?= $error['email1Empty']; ?></p>
+										<?php endif; ?>
+										<?php if (isset($error['emailMatch'])) : ?>
+											<p><?= $error['emailMatch']; ?></p>
+										<?php endif; ?>
+										<?php if (isset($error['emailFormat'])) : ?>
+											<p><?= $error['emailFormat']; ?></p>
+										<?php endif; ?>
 									</div>
 									誤ったメールアドレスを記入されますと返信ができなくなります。</br>間違いのないようにご記入ください。</br>
 									<input type="text" name="mail_address1" id="mail_address1" maxlength="100" size="50">
@@ -103,7 +115,9 @@
 							<tr>
 								<td class="mail-confirm-space">
 									<div class="validator">
-										<p><?= $error['email2Empty']; ?></p>
+										<?php if (isset($error['email2Empty'])) : ?>
+											<p><?= $error['email2Empty']; ?></p>
+										<?php endif; ?>
 									</div>
 									確認のため、もう一度ご記入ください。</br>
 									<input type="text" name="mail_address2" id="mail_address2" maxlength="100" size="50">
@@ -114,7 +128,9 @@
 								<th colspan="2">お問い合わせ内容<span class="red">※</span></th>
 								<td class="single-space">
 									<div class="validator">
-										<p><?= $error['contact_typeEmpty']; ?></p>
+										<?php if (isset($error['contact_typeEmpty'])) : ?>
+											<p><?= $error['contact_typeEmpty']; ?></p>
+										<?php endif; ?>
 									</div>
 									<input type="checkbox" name="contact_type1" id="contact_type1" value="内見を予約したい"><label for="contact_type1">内見を予約したい</label>
 									<input type="checkbox" name="contact_type2" id="contact_type2" value="詳しい情報を知りたい"><label for="contact_type2">詳しい情報を知りたい</label>
@@ -126,7 +142,9 @@
 								<th colspan="2">お問い合わせ詳細</th>
 								<td class="text-space">
 									<div class="validator">
-										<p><?= $error['descriptionEmpty']; ?></p>
+										<?php if (isset($error['descriptionEmpty'])) : ?>
+											<p><?= $error['descriptionEmpty']; ?></p>
+										<?php endif; ?>
 									</div>
 									<textarea name="description" id="description" row="10" col="80"></textarea>
 								</td>
@@ -171,7 +189,9 @@
 								<h3>漢字<span class="red">※</span></h3>
 								<div class="phone-name-space">
 									<div class="validator">
-										<p><?= $error['nameEmpty']; ?></p>
+										<?php if (isset($error['nameEmpty'])) : ?>
+											<p><?= $error['nameEmpty']; ?></p>
+										<?php endif; ?>
 									</div>
 									姓
 									<input type="text" name="last_name" id="last-name" class="input-area" maxlength="100">
@@ -184,7 +204,9 @@
 								<h3>フリガナ<span class="red">※</span></h3>
 								<div class="phone-name-space">
 									<div class="validator">
-										<p><?= $error['name2Empty']; ?></p>
+										<?php if (isset($error['name2Empty'])) : ?>
+											<p><?= $error['name2Empty']; ?></p>
+										<?php endif; ?>
 									</div>
 									セイ
 									<input type="text" name="last_name2" id="last_name" class="input-area" maxlength="100">
@@ -201,7 +223,9 @@
 							<div class="post-bottom-area">
 								<div class="phone-all-area">
 									<div class="validator">
-										<p><?= $error['phoneEmpty']; ?></p>
+										<?php if (isset($error['phoneEmpty'])) : ?>
+											<p><?= $error['phoneEmpty']; ?></p>
+										<?php endif; ?>
 									</div>
 									<input type="text" name="phone_number" id="phone_number" maxlength="50" size="50"></br>
 									[半角数字]
@@ -215,14 +239,22 @@
 							<div class="post-bottom-area">
 								<div class="phone-all-area">
 									<div class="validator">
-										<p><?= $error['email1Empty']; ?></p>
-										<p><?= $error['emailMatch']; ?></p>
-										<p><?= $error['emailFormat']; ?></p>
+										<?php if (isset($error['email1Empty'])) : ?>
+											<p><?= $error['email1Empty']; ?></p>
+										<?php endif; ?>
+										<?php if (isset($error['emailMatch'])) : ?>
+											<p><?= $error['emailMatch']; ?></p>
+										<?php endif; ?>
+										<?php if (isset($error['emailFormat'])) : ?>
+											<p><?= $error['emailFormat']; ?></p>
+										<?php endif; ?>
 									</div>
 									誤ったメールアドレスを記入されますと返信ができなくなります。間違いのないようにご記入ください。</br>
 									<input type="text" name="mail_address1" id="mail_address1" maxlength="100" size="50"></br>
 									<div class="validator">
-										<p><?= $error['email2Empty']; ?></p>
+										<?php if (isset($error['email2Empty'])) : ?>
+											<p><?= $error['email2Empty']; ?></p>
+										<?php endif; ?>
 									</div>
 									[半角英数字]</br>
 									<span class="red">
